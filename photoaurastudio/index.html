@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - PhotoAura Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0d0a12;
+            --container-bg: rgba(26, 21, 36, 0.6);
+            --primary: #8b5cf6;
+            --primary-glow: rgba(139, 92, 246, 0.15);
+            --text-main: #f3f1f6;
+            --text-muted: #a78bfa;
+            --border-color: rgba(139, 92, 246, 0.2);
+            --accent: #d8b4fe;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 40px 20px;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(216, 180, 254, 0.05) 0%, transparent 40%);
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 50px;
+            border-radius: 24px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 80px var(--primary-glow);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 30px;
+        }
+
+        .logo-placeholder {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 20px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 24px rgba(139, 92, 246, 0.3);
+        }
+
+        .logo-icon {
+            font-size: 40px;
+            font-weight: 800;
+            color: #fff;
+            user-select: none;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(to right, #fff, var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin-top: 35px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            letter-spacing: -0.3px;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 20px;
+            background: var(--primary);
+            border-radius: 3px;
+        }
+
+        p {
+            font-size: 1.05rem;
+            color: #d1cbdc;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            color: #d1cbdc;
+            font-weight: 300;
+        }
+
+        li::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .highlight-box {
+            background: rgba(139, 92, 246, 0.08);
+            border-left: 4px solid var(--primary);
+            padding: 25px;
+            border-radius: 0 16px 16px 0;
+            margin: 30px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            color: #e2ddec;
+            font-weight: 400;
+        }
+
+        .contact-section {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .email-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, var(--primary), #7c3aed);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.2);
+        }
+
+        .email-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.3);
+            font-weight: 300;
+        }
+
+        a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="logo-placeholder">
+            <span class="logo-icon">P</span>
+        </div>
+        <h1>PhotoAura Studio</h1>
+        <p class="subtitle">Simplified Privacy Policy</p>
+    </div>
+
+    <h2>1. 100% Local & Private Processing</h2>
+    <p>PhotoAura Studio is an offline creative suite. Your images, canvases, graphic projects, and files are processed <strong>strictly locally on your computer</strong>. None of your media or creative content is uploaded, transmitted, or stored on external servers.</p>
+
+    <div class="highlight-box">
+        <p>Your creations are your absolute property. PhotoAura Studio has zero access to your files unless you explicitly choose to open or save them on your local hard drive.</p>
+    </div>
+
+    <h2>2. Data We Do Not Collect</h2>
+    <p>We believe in absolute user privacy. Unlike cloud-based graphic tools, PhotoAura Studio:</p>
+    <ul>
+        <li>Does not require creating or logging into a user account to function.</li>
+        <li>Does not request names, emails, phone numbers, or passwords.</li>
+        <li>Does not track your design habits, history, or tool usage.</li>
+        <li>Does not collect telemetry, system metrics, or crash logs.</li>
+    </ul>
+
+    <h2>3. Safe & Sandboxed Execution</h2>
+    <p>Our application is distributed as a secure, signed MSIX container via the Windows Store. This packaging sandboxes the application, preventing it from making unauthorized system-wide modifications and ensuring a completely clean uninstallation with zero registry residue.</p>
+
+    <h2>4. Open Source & Licensing</h2>
+    <p>PhotoAura Studio is built upon the powerful open-source <strong>GIMP (GNU Image Manipulation Program)</strong> engine and is distributed in full compliance with the GNU General Public License (GPLv3). The custom C# native launcher designed for PhotoAura Studio does not make network connections and runs purely offline to configure your dark purple visual theme and workspace preferences.</p>
+
+    <div class="contact-section">
+        <p>If you have any questions or feedback regarding our privacy practices, please contact us directly at:</p>
+        <a href="mailto:huskyestudio@hotmail.com" class="email-btn">huskyestudio@hotmail.com</a>
+    </div>
+
+    <p class="footer-note">Last updated: May 2026 • Published by huskyCodeAI</p>
+</div>
+
+</body>
+</html>
