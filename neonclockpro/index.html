@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Neon Clock Widget Pro</title>
+    <meta name="description" content="Privacy Policy for Neon Clock Widget Pro, the customizable neon glow clock widget for Windows. 100% local and offline.">
+
+    <style>
+        :root {
+            --bg-color: #0b0b0b;
+            --container-bg: rgba(20, 20, 20, 0.75);
+            --primary: #00f5ff; /* Neon Cyan */
+            --primary-glow: rgba(0, 245, 255, 0.12);
+            --text-main: #f5f5f5;
+            --text-muted: #b0b0b0;
+            --text-subtle: #606060;
+            --border-color: rgba(0, 245, 255, 0.18);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.75;
+            padding: 48px 20px 80px;
+            background-image:
+                radial-gradient(circle at 15% 25%, rgba(0, 245, 255, 0.06) 0%, transparent 45%),
+                radial-gradient(circle at 85% 75%, rgba(255, 111, 32, 0.04) 0%, transparent 45%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            backdrop-filter: blur(16px);
+            padding: 56px 52px;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            box-shadow:
+                0 24px 48px rgba(0, 0, 0, 0.5),
+                0 0 100px var(--primary-glow);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 36px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .logo-mark {
+            width: 76px;
+            height: 76px;
+            background: linear-gradient(135deg, var(--primary), #ff6f20); /* Cyan to Neon Orange */
+            border-radius: 18px;
+            margin: 0 auto 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-mark svg {
+            width: 38px;
+            height: 38px;
+            fill: none;
+            stroke: #fff;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            font-weight: 300;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #7fc1f0;
+            margin-top: 36px;
+            margin-bottom: 14px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #c8c8c8;
+            margin-bottom: 16px;
+            font-weight: 300;
+        }
+
+        strong {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 20px;
+            padding-left: 4px;
+        }
+
+        li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 10px;
+            color: #c8c8c8;
+        }
+
+        li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 9px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--primary);
+        }
+
+        .highlight-box {
+            background: rgba(0, 245, 255, 0.07);
+            border-left: 3px solid var(--primary);
+            padding: 20px 24px;
+            border-radius: 0 12px 12px 0;
+            margin: 24px 0;
+        }
+
+        .tag-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 16px 0 30px;
+        }
+
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 5px 14px;
+            background: rgba(0, 245, 255, 0.08);
+            border: 1px solid rgba(0, 245, 255, 0.25);
+            border-radius: 100px;
+            font-size: 0.83rem;
+            color: #86efac;
+            font-weight: 500;
+        }
+
+        .section-divider {
+            height: 1px;
+            background: var(--border-color);
+            margin: 40px 0 36px;
+        }
+
+        .section-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--text-subtle);
+            margin-top: 44px;
+            margin-bottom: 4px;
+        }
+
+        .contact-section {
+            margin-top: 52px;
+            padding: 32px 28px;
+            background: rgba(0, 245, 255, 0.06);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            text-align: center;
+        }
+
+        .contact-section p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 18px;
+        }
+
+        .email-btn {
+            display: inline-block;
+            padding: 12px 32px;
+            background: linear-gradient(135deg, var(--primary), #ff6f20);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 100px;
+            font-weight: 600;
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 36px;
+            font-size: 0.82rem;
+            color: var(--text-subtle);
+        }
+
+        @media (max-width: 620px) {
+            .container {
+                padding: 36px 24px;
+            }
+
+            h1 {
+                font-size: 1.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <div class="logo-mark">
+            <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 7v5l3 3"/>
+                <line x1="3" y1="3" x2="7" y2="7"/>
+            </svg>
+        </div>
+
+        <h1>Neon Clock Widget Pro</h1>
+        <p class="subtitle">
+            Privacy Policy — Customizable Neon Glow Clock Widget for Windows
+        </p>
+    </div>
+
+    <div class="tag-row">
+        <span class="tag">100% Offline</span>
+        <span class="tag">No account required</span>
+        <span class="tag">Zero telemetry</span>
+        <span class="tag">No data collection</span>
+        <span class="tag">Local widget only</span>
+    </div>
+
+    <p class="section-label">Neon Clock Widget Pro Privacy Policy</p>
+
+    <p>
+        This privacy policy applies specifically to <strong>Neon Clock Widget Pro</strong>,
+        a fully offline customizable neon glow clock widget application for Windows.
+    </p>
+
+    <h2>100% Local & Offline Operation</h2>
+
+    <p>
+        Neon Clock Widget Pro operates entirely on your local machine. All layout rendering,
+        time synchronizations with your local system clock, and configuration saving happen
+        locally on your device and are never uploaded, transmitted, or shared externally.
+    </p>
+
+    <div class="highlight-box">
+        <p>
+            Your system data and preferences remain fully private and under your control
+            at all times. Neon Clock Widget Pro never reads, copies, or transmits your system data
+            outside your computer.
+        </p>
+    </div>
+
+    <h2>Data We Do Not Collect</h2>
+
+    <p>Neon Clock Widget Pro does not collect or process personal information.</p>
+
+    <ul>
+        <li>No account creation is required.</li>
+        <li>No names, emails, phone numbers, or passwords are requested.</li>
+        <li>No analytics, tracking, or telemetry systems are used.</li>
+        <li>No advertisements are displayed.</li>
+        <li>No active internet connection is required or used during normal clock operation.</li>
+        <li>No tracking of user preferences or behavior occurs.</li>
+        <li>No cloud synchronization features exist.</li>
+    </ul>
+
+    <h2>Local Settings Storage</h2>
+
+    <p>
+        Neon Clock Widget Pro stores user configuration preferences locally on your computer, including
+        the selected font styles, neon day/date colors, active clock style, and window coordinates.
+    </p>
+
+    <div class="highlight-box">
+        <p>
+            <strong>%LocalAppData%\Neon_Clock_Widget_Pro\...</strong>
+        </p>
+    </div>
+
+    <p>
+        These preferences remain entirely on your device and may be cleared by resetting the app's settings.
+        No data is persisted on external servers.
+    </p>
+
+    <h2>No External Network Communication</h2>
+
+    <p>
+        Neon Clock Widget Pro performs no background network communication, update checks,
+        analytics requests, or remote server connections.
+    </p>
+
+    <div class="contact-section">
+        <p>
+            If you have questions regarding this privacy policy, you may
+            contact us directly.
+        </p>
+
+        <a href="mailto:huskyestudio@hotmail.com" class="email-btn">
+            huskyestudio@hotmail.com
+        </a>
+    </div>
+
+    <p class="footer-note">
+        Last updated: June 2026 • Neon Clock Widget Pro v3.0
+    </p>
+
+</div>
+
+</body>
+</html>
