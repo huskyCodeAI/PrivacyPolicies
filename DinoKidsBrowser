@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Privacy Policy - DinoBrowser Premium</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #8BDB81; /* Jungle green */
+      font-family: 'Comic Sans MS', 'Segoe UI', sans-serif;
+      color: #2D3436;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+
+    /* Clouds */
+    .clouds {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      z-index: 0;
+      pointer-events: none;
+    }
+    
+    .cloud {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 50px;
+      animation: float linear infinite;
+    }
+
+    @keyframes float {
+      from { transform: translateX(-150px); }
+      to { transform: translateX(110vw); }
+    }
+
+    /* Container */
+    .container {
+      background: #FFFFFF;
+      width: 90%;
+      max-width: 800px;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      padding: 40px;
+      z-index: 1;
+      position: relative;
+    }
+
+    .lang-switcher {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .lang-btn {
+      background: #FFE66D;
+      border: 2px solid #FDCB6E;
+      border-radius: 12px;
+      padding: 5px 15px;
+      font-family: 'Comic Sans MS', 'Segoe UI', sans-serif;
+      font-weight: bold;
+      color: #2D3436;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lang-btn:hover {
+      background: #FDCB6E;
+      transform: scale(1.05);
+    }
+
+    .header-logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .header-logo img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      text-align: center;
+      color: #4A9E4E;
+      font-size: 36px;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 0px #FFE66D;
+    }
+
+    h2 {
+      color: #4ECDC4;
+      font-size: 24px;
+      margin-top: 30px;
+      border-bottom: 3px dashed #FFE66D;
+      padding-bottom: 5px;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    ul {
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #999;
+      font-size: 14px;
+    }
+
+    .btn-back {
+      display: block;
+      width: fit-content;
+      margin: 30px auto 0;
+      background-color: #FF6B6B;
+      color: white;
+      text-decoration: none;
+      padding: 12px 30px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 18px;
+      box-shadow: 0 4px 0 #D63031;
+      transition: all 0.1s;
+    }
+
+    .btn-back:hover {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 #D63031;
+    }
+
+    /* Simple cloud generation */
+    .c1 { width: 100px; height: 40px; top: 20px; animation-duration: 40s; }
+    .c2 { width: 150px; height: 50px; top: 70px; animation-duration: 60s; animation-delay: -15s; }
+    .c3 { width: 80px; height: 30px; top: 40px; animation-duration: 35s; animation-delay: -20s; }
+  </style>
+</head>
+<body>
+
+  <div class="clouds">
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
+    <div class="cloud c3"></div>
+  </div>
+
+  <div class="container">
+    <div class="lang-switcher">
+      <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+      <button class="lang-btn" onclick="setLanguage('es')">ES</button>
+      <button class="lang-btn" onclick="setLanguage('pt-BR')">PT</button>
+      <button class="lang-btn" onclick="setLanguage('fr')">FR</button>
+      <button class="lang-btn" onclick="setLanguage('de')">DE</button>
+      <button class="lang-btn" onclick="setLanguage('it')">IT</button>
+      <button class="lang-btn" onclick="setLanguage('nl')">NL</button>
+      <button class="lang-btn" onclick="setLanguage('ja')">JA</button>
+      <button class="lang-btn" onclick="setLanguage('zh-CN')">ZH</button>
+    </div>
+
+    <div class="header-logo">
+      <img src="img/game_wordcatch.png" alt="Dino Logo">
+    </div>
+    
+    <h1 id="title">Privacy Policy</h1>
+    <p id="last-updated">Last Updated: <strong>June 11, 2026</strong></p>
+
+    <p id="intro">At <strong>DinoBrowser Premium</strong> ("we", "our"), the safety and privacy of children and families is our top priority. This Privacy Policy explains how we collect, use, and protect your information.</p>
+
+    <h2 id="h-collection">1. Information Collection</h2>
+    <p id="p-collection">DinoBrowser Premium is a local web browser focused on parental control. <strong>We do not collect or sell personal data to third parties.</strong> All parental control settings, website blocks, and preferences are stored encrypted and locally on your device.</p>
+    <ul id="ul-collection">
+      <li><strong>Local Data:</strong> Usage history, security PINs, and white/black lists are stored exclusively on your computer using military-grade encryption (SQLCipher and DPAPI).</li>
+      <li><strong>Network Requests:</strong> The browser uses Cloudflare DNS for Families to filter adult content and malware, according to their standard DNS resolution policies.</li>
+    </ul>
+
+    <h2 id="h-features">2. Features for Children</h2>
+    <p id="p-features">Our software includes mini-games and educational features (Dino Adventure) that are completely offline. They do not include ad trackers, hidden in-app purchases, or invasive telemetry. We strictly comply with child privacy laws (like COPPA).</p>
+
+    <h2 id="h-purchases">3. Purchases and Subscriptions</h2>
+    <p id="p-purchases">DinoBrowser Premium manages purchases and subscriptions through the secure infrastructure of the <strong>Microsoft Store</strong>. We do not store or process credit card or payment information on our servers.</p>
+
+    <h2 id="h-permissions">4. System Permissions</h2>
+    <p id="p-permissions">To provide a safe browsing environment and block access to inappropriate sites, DinoBrowser may require elevated system permissions (Kiosk Mode and local Hosts file manipulation). These permissions are only used for content filtering and security.</p>
+
+    <h2 id="h-contact">5. Contact</h2>
+    <p id="p-contact">If you have any questions about our privacy practices, please contact our technical support team through the Microsoft Store portal or the parent dashboard within the app.</p>
+
+    <a href="mailto:huskyestudio@hotmail.com" class="btn-back" id="btn-contact">Contact Support</a>
+    
+    <div class="footer" id="footer">
+      &copy; 2026 Husky Estudio Soft. All rights reserved.
+    </div>
+  </div>
+
+  <script>
+    const translations = {
+      en: {
+        pageTitle: "Privacy Policy - DinoBrowser Premium",
+        title: "Privacy Policy",
+        lastUpdated: "Last Updated: <strong>June 11, 2026</strong>",
+        intro: "At <strong>DinoBrowser Premium</strong> (\"we\", \"our\"), the safety and privacy of children and families is our top priority. This Privacy Policy explains how we collect, use, and protect your information.",
+        hCollection: "1. Information Collection",
+        pCollection: "DinoBrowser Premium is a local web browser focused on parental control. <strong>We do not collect or sell personal data to third parties.</strong> All parental control settings, website blocks, and preferences are stored encrypted and locally on your device.",
+        ulCollection: `<li><strong>Local Data:</strong> Usage history, security PINs, and white/black lists are stored exclusively on your computer using military-grade encryption (SQLCipher and DPAPI).</li>
+                       <li><strong>Network Requests:</strong> The browser uses Cloudflare DNS for Families to filter adult content and malware, according to their standard DNS resolution policies.</li>`,
+        hFeatures: "2. Features for Children",
+        pFeatures: "Our software includes mini-games and educational features (Dino Adventure) that are completely offline. They do not include ad trackers, hidden in-app purchases, or invasive telemetry. We strictly comply with child privacy laws (like COPPA).",
+        hPurchases: "3. Purchases and Subscriptions",
+        pPurchases: "DinoBrowser Premium manages purchases and subscriptions through the secure infrastructure of the <strong>Microsoft Store</strong>. We do not store or process credit card or payment information on our servers.",
+        hPermissions: "4. System Permissions",
+        pPermissions: "To provide a safe browsing environment and block access to inappropriate sites, DinoBrowser may require elevated system permissions (Kiosk Mode and local Hosts file manipulation). These permissions are only used for content filtering and security.",
+        hContact: "5. Contact",
+        pContact: "If you have any questions about our privacy practices, please contact our technical support team through the Microsoft Store portal or the parent dashboard within the app.",
+        btnContact: "Contact Support",
+        footer: "&copy; 2026 Husky Estudio Soft. All rights reserved."
+      },
+      es: {
+        pageTitle: "Política de Privacidad - DinoBrowser Premium",
+        title: "Política de Privacidad",
+        lastUpdated: "Última actualización: <strong>11 de Junio, 2026</strong>",
+        intro: "En <strong>DinoBrowser Premium</strong> (\"nosotros\", \"nuestro\"), la seguridad y privacidad de los niños y las familias es nuestra máxima prioridad. Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos tu información.",
+        hCollection: "1. Recopilación de Información",
+        pCollection: "DinoBrowser Premium es un navegador web local enfocado en el control parental. <strong>No recopilamos ni vendemos datos personales a terceros.</strong> Toda la configuración de control parental, bloqueos de sitios web y preferencias se almacena de manera encriptada y local en tu dispositivo.",
+        ulCollection: `<li><strong>Datos Locales:</strong> Historial de uso, pines de seguridad y listas blancas/negras se guardan exclusivamente en tu computadora usando encriptación de grado militar (SQLCipher y DPAPI).</li>
+                       <li><strong>Peticiones de Red:</strong> El navegador utiliza Cloudflare DNS for Families para filtrar contenido de adultos y malware, de acuerdo a sus políticas estándar de resolución DNS.</li>`,
+        hFeatures: "2. Funcionalidades para Niños",
+        pFeatures: "Nuestro software incluye minijuegos y funciones educativas (Aventura Dino) completamente fuera de línea. No incluyen rastreadores de anuncios, compras dentro de la aplicación ocultas, ni telemetría invasiva. Cumplimos estrictamente con las leyes de privacidad infantil (como COPPA).",
+        hPurchases: "3. Compras y Suscripciones",
+        pPurchases: "DinoBrowser Premium gestiona las compras y suscripciones a través de la infraestructura segura de <strong>Microsoft Store</strong>. Nosotros no almacenamos ni procesamos información de tarjetas de crédito o pagos en nuestros servidores.",
+        hPermissions: "4. Permisos de Sistema",
+        pPermissions: "Para proporcionar un entorno de navegación seguro y bloquear acceso a sitios indebidos, DinoBrowser puede requerir permisos de sistema elevados (Modo Kiosco y manipulación de archivos Hosts locales). Estos permisos solo se utilizan para el filtrado de contenido y seguridad.",
+        hContact: "5. Contacto",
+        pContact: "Si tienes alguna duda sobre nuestras prácticas de privacidad, por favor contacta a nuestro equipo de soporte técnico a través del portal en Microsoft Store o en el panel de padres dentro de la aplicación.",
+        btnContact: "Contactar Soporte",
+        footer: "&copy; 2026 Husky Estudio Soft. Todos los derechos reservados."
+      },
+      'pt-BR': {
+        pageTitle: "Política de Privacidade - DinoBrowser Premium",
+        title: "Política de Privacidade",
+        lastUpdated: "Última atualização: <strong>11 de Junho, 2026</strong>",
+        intro: "No <strong>DinoBrowser Premium</strong> (\"nós\", \"nosso\"), a segurança e a privacidade das crianças e famílias é nossa prioridade máxima. Esta Política de Privacidade explica como coletamos, usamos e protegemos suas informações.",
+        hCollection: "1. Coleta de Informações",
+        pCollection: "DinoBrowser Premium é um navegador da web local focado no controle parental. <strong>Nós não coletamos nem vendemos dados pessoais a terceiros.</strong> Todas as configurações de controle parental, bloqueios de sites e preferências são armazenadas de forma criptografada e local em seu dispositivo.",
+        ulCollection: `<li><strong>Dados Locais:</strong> Histórico de uso, PINs de segurança e listas brancas/negras são armazenados exclusivamente em seu computador usando criptografia de nível militar (SQLCipher e DPAPI).</li>
+                       <li><strong>Solicitações de Rede:</strong> O navegador usa o Cloudflare DNS for Families para filtrar conteúdo adulto e malware, de acordo com suas políticas padrão de resolução de DNS.</li>`,
+        hFeatures: "2. Recursos para Crianças",
+        pFeatures: "Nosso software inclui minijogos e recursos educacionais (Dino Adventure) totalmente offline. Eles não incluem rastreadores de anúncios, compras ocultas no aplicativo ou telemetria invasiva. Cumprimos estritamente as leis de privacidade infantil (como COPPA).",
+        hPurchases: "3. Compras e Assinaturas",
+        pPurchases: "O DinoBrowser Premium gerencia compras e assinaturas por meio da infraestrutura segura da <strong>Microsoft Store</strong>. Não armazenamos nem processamos informações de cartão de crédito ou pagamento em nossos servidores.",
+        hPermissions: "4. Permissões do Sistema",
+        pPermissions: "Para fornecer um ambiente de navegação seguro e bloquear o acesso a sites impróprios, o DinoBrowser pode exigir permissões de sistema elevadas (Modo Quiosque e manipulação local do arquivo Hosts). Essas permissões são usadas apenas para filtragem de conteúdo e segurança.",
+        hContact: "5. Contato",
+        pContact: "Se você tiver alguma dúvida sobre nossas práticas de privacidade, entre em contato com nossa equipe de suporte técnico pelo portal da Microsoft Store ou pelo painel dos pais no aplicativo.",
+        btnContact: "Contatar Suporte",
+        footer: "&copy; 2026 Husky Estudio Soft. Todos os direitos reservados."
+      },
+      fr: {
+        pageTitle: "Politique de Confidentialité - DinoBrowser Premium",
+        title: "Politique de Confidentialité",
+        lastUpdated: "Dernière mise à jour : <strong>11 Juin 2026</strong>",
+        intro: "Chez <strong>DinoBrowser Premium</strong> (\"nous\", \"notre\"), la sécurité et la confidentialité des enfants et des familles sont notre priorité absolue. Cette Politique de Confidentialité explique comment nous collectons, utilisons et protégeons vos informations.",
+        hCollection: "1. Collecte d'Informations",
+        pCollection: "DinoBrowser Premium est un navigateur web local axé sur le contrôle parental. <strong>Nous ne collectons ni ne vendons de données personnelles à des tiers.</strong> Tous les paramètres de contrôle parental, les blocages de sites et les préférences sont stockés de manière chiffrée et locale sur votre appareil.",
+        ulCollection: `<li><strong>Données Locales :</strong> L'historique d'utilisation, les codes PIN de sécurité et les listes blanches/noires sont stockés exclusivement sur votre ordinateur à l'aide d'un cryptage de niveau militaire (SQLCipher et DPAPI).</li>
+                       <li><strong>Requêtes Réseau :</strong> Le navigateur utilise Cloudflare DNS for Families pour filtrer le contenu pour adultes et les logiciels malveillants, conformément à leurs politiques standards de résolution DNS.</li>`,
+        hFeatures: "2. Fonctionnalités pour Enfants",
+        pFeatures: "Notre logiciel comprend des mini-jeux et des fonctionnalités éducatives (Dino Adventure) entièrement hors ligne. Ils n'incluent pas de traceurs publicitaires, d'achats intégrés cachés ni de télémétrie invasive. Nous respectons strictement les lois sur la confidentialité des enfants (comme la COPPA).",
+        hPurchases: "3. Achats et Abonnements",
+        pPurchases: "DinoBrowser Premium gère les achats et les abonnements via l'infrastructure sécurisée du <strong>Microsoft Store</strong>. Nous ne stockons ni ne traitons aucune information de carte de crédit ou de paiement sur nos serveurs.",
+        hPermissions: "4. Autorisations Système",
+        pPermissions: "Pour offrir un environnement de navigation sécurisé et bloquer l'accès aux sites inappropriés, DinoBrowser peut nécessiter des autorisations système élevées (Mode Kiosque et manipulation locale du fichier Hosts). Ces autorisations sont utilisées uniquement pour le filtrage de contenu et la sécurité.",
+        hContact: "5. Contact",
+        pContact: "Si vous avez des questions concernant nos pratiques de confidentialité, veuillez contacter notre équipe d'assistance technique via le portail Microsoft Store ou le tableau de bord des parents dans l'application.",
+        btnContact: "Contacter l'Assistance",
+        footer: "&copy; 2026 Husky Estudio Soft. Tous droits réservés."
+      },
+      de: {
+        pageTitle: "Datenschutzrichtlinie - DinoBrowser Premium",
+        title: "Datenschutzrichtlinie",
+        lastUpdated: "Zuletzt aktualisiert: <strong>11. Juni 2026</strong>",
+        intro: "Bei <strong>DinoBrowser Premium</strong> (\"wir\", \"unser\") haben die Sicherheit und Privatsphäre von Kindern und Familien höchste Priorität. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Daten erfassen, verwenden und schützen.",
+        hCollection: "1. Datenerfassung",
+        pCollection: "DinoBrowser Premium ist ein lokaler Webbrowser, der auf Kindersicherung ausgerichtet ist. <strong>Wir erfassen oder verkaufen keine personenbezogenen Daten an Dritte.</strong> Alle Einstellungen der Kindersicherung, Website-Sperren und Einstellungen werden verschlüsselt und lokal auf Ihrem Gerät gespeichert.",
+        ulCollection: `<li><strong>Lokale Daten:</strong> Nutzungsverlauf, Sicherheits-PINs und Whitelists/Blacklists werden ausschließlich auf Ihrem Computer mit militärischer Verschlüsselung (SQLCipher und DPAPI) gespeichert.</li>
+                       <li><strong>Netzwerkanfragen:</strong> Der Browser verwendet Cloudflare DNS for Families, um nicht jugendfreie Inhalte und Malware gemäß den Standard-DNS-Auflösungsrichtlinien zu filtern.</li>`,
+        hFeatures: "2. Funktionen für Kinder",
+        pFeatures: "Unsere Software umfasst Minispiele und Bildungsfunktionen (Dino Adventure), die vollständig offline sind. Sie enthalten keine Anzeigen-Tracker, versteckten In-App-Käufe oder invasive Telemetrie. Wir halten uns strikt an die Datenschutzgesetze für Kinder (wie COPPA).",
+        hPurchases: "3. Käufe und Abonnements",
+        pPurchases: "DinoBrowser Premium verwaltet Käufe und Abonnements über die sichere Infrastruktur des <strong>Microsoft Store</strong>. Wir speichern oder verarbeiten keine Kreditkarten- oder Zahlungsinformationen auf unseren Servern.",
+        hPermissions: "4. Systemberechtigungen",
+        pPermissions: "Um eine sichere Surfumgebung zu bieten und den Zugriff auf unangemessene Seiten zu blockieren, benötigt DinoBrowser möglicherweise erhöhte Systemberechtigungen (Kiosk-Modus und lokale Bearbeitung der Hosts-Datei). Diese Berechtigungen werden nur zur Inhaltsfilterung und Sicherheit verwendet.",
+        hContact: "5. Kontakt",
+        pContact: "Wenn Sie Fragen zu unseren Datenschutzpraktiken haben, wenden Sie sich bitte über das Microsoft Store-Portal oder das Eltern-Dashboard in der App an unser technisches Support-Team.",
+        btnContact: "Support Kontaktieren",
+        footer: "&copy; 2026 Husky Estudio Soft. Alle Rechte vorbehalten."
+      },
+      it: {
+        pageTitle: "Informativa sulla Privacy - DinoBrowser Premium",
+        title: "Informativa sulla Privacy",
+        lastUpdated: "Ultimo aggiornamento: <strong>11 Giugno 2026</strong>",
+        intro: "In <strong>DinoBrowser Premium</strong> (\"noi\", \"nostro\"), la sicurezza e la privacy dei bambini e delle famiglie è la nostra massima priorità. Questa Informativa sulla Privacy spiega come raccogliamo, utilizziamo e proteggiamo le tue informazioni.",
+        hCollection: "1. Raccolta delle Informazioni",
+        pCollection: "DinoBrowser Premium è un browser web locale incentrato sul controllo parentale. <strong>Non raccogliamo né vendiamo dati personali a terzi.</strong> Tutte le impostazioni di controllo parentale, i blocchi dei siti Web e le preferenze vengono memorizzati in modo crittografato e locale sul tuo dispositivo.",
+        ulCollection: `<li><strong>Dati Locali:</strong> La cronologia di utilizzo, i PIN di sicurezza e le liste bianche/nere sono memorizzati esclusivamente sul tuo computer utilizzando la crittografia di livello militare (SQLCipher e DPAPI).</li>
+                       <li><strong>Richieste di Rete:</strong> Il browser utilizza Cloudflare DNS for Families per filtrare i contenuti per adulti e i malware, in conformità con le loro politiche standard di risoluzione DNS.</li>`,
+        hFeatures: "2. Funzionalità per Bambini",
+        pFeatures: "Il nostro software include minigiochi e funzionalità educative (Dino Adventure) completamente offline. Non includono tracker pubblicitari, acquisti in-app nascosti o telemetria invasiva. Rispettiamo rigorosamente le leggi sulla privacy dei minori (come COPPA).",
+        hPurchases: "3. Acquisti e Abbonamenti",
+        pPurchases: "DinoBrowser Premium gestisce gli acquisti e gli abbonamenti tramite l'infrastruttura sicura del <strong>Microsoft Store</strong>. Non memorizziamo né elaboriamo informazioni su carte di credito o pagamenti sui nostri server.",
+        hPermissions: "4. Autorizzazioni di Sistema",
+        pPermissions: "Per fornire un ambiente di navigazione sicuro e bloccare l'accesso a siti inappropriati, DinoBrowser potrebbe richiedere autorizzazioni di sistema elevate (Modalità Kiosk e manipolazione locale del file Hosts). Queste autorizzazioni vengono utilizzate solo per il filtraggio dei contenuti e la sicurezza.",
+        hContact: "5. Contatto",
+        pContact: "In caso di domande sulle nostre pratiche sulla privacy, contatta il nostro team di supporto tecnico tramite il portale di Microsoft Store o la dashboard dei genitori all'interno dell'app.",
+        btnContact: "Contatta il Supporto",
+        footer: "&copy; 2026 Husky Estudio Soft. Tutti i diritti riservati."
+      },
+      nl: {
+        pageTitle: "Privacybeleid - DinoBrowser Premium",
+        title: "Privacybeleid",
+        lastUpdated: "Laatst bijgewerkt: <strong>11 Juni 2026</strong>",
+        intro: "Bij <strong>DinoBrowser Premium</strong> (\"wij\", \"ons\") is de veiligheid en privacy van kinderen en gezinnen onze topprioriteit. Dit privacybeleid legt uit hoe wij uw informatie verzamelen, gebruiken en beschermen.",
+        hCollection: "1. Informatie verzamelen",
+        pCollection: "DinoBrowser Premium is een lokale webbrowser gericht op ouderlijk toezicht. <strong>Wij verzamelen of verkopen geen persoonlijke gegevens aan derden.</strong> Alle instellingen voor ouderlijk toezicht, websiteblokkades en voorkeuren worden gecodeerd en lokaal op uw apparaat opgeslagen.",
+        ulCollection: `<li><strong>Lokale gegevens:</strong> Gebruiksgeschiedenis, beveiligingspincodes en witte/zwarte lijsten worden uitsluitend op uw computer opgeslagen met behulp van codering op militair niveau (SQLCipher en DPAPI).</li>
+                       <li><strong>Netwerkverzoeken:</strong> De browser maakt gebruik van Cloudflare DNS for Families om inhoud voor volwassenen en malware te filteren, in overeenstemming met hun standaard DNS-resolutiebeleid.</li>`,
+        hFeatures: "2. Functies voor kinderen",
+        pFeatures: "Onze software bevat minigames en educatieve functies (Dino Adventure) die volledig offline zijn. Ze bevatten geen advertentietrackers, verborgen in-app aankopen of invasieve telemetrie. Wij houden ons strikt aan de privacywetten voor kinderen (zoals COPPA).",
+        hPurchases: "3. Aankopen en abonnementen",
+        pPurchases: "DinoBrowser Premium beheert aankopen en abonnementen via de veilige infrastructuur van de <strong>Microsoft Store</strong>. Wij slaan geen creditcard- of betalingsinformatie op en verwerken deze niet op onze servers.",
+        hPermissions: "4. Systeemrechten",
+        pPermissions: "Om een veilige browse-omgeving te bieden en de toegang tot ongepaste sites te blokkeren, vereist DinoBrowser mogelijk verhoogde systeemrechten (Kioskmodus en lokale manipulatie van Hosts-bestanden). Deze machtigingen worden alleen gebruikt voor contentfiltering en beveiliging.",
+        hContact: "5. Contact",
+        pContact: "Als u vragen heeft over onze privacypraktijken, neem dan contact op met ons technische ondersteuningsteam via het Microsoft Store-portaal of het ouderdashboard in de app.",
+        btnContact: "Contact opnemen",
+        footer: "&copy; 2026 Husky Estudio Soft. Alle rechten voorbehouden."
+      },
+      ja: {
+        pageTitle: "プライバシーポリシー - DinoBrowser Premium",
+        title: "プライバシーポリシー",
+        lastUpdated: "最終更新日: <strong>2026年6月11日</strong>",
+        intro: "<strong>DinoBrowser Premium</strong> (「私たち」、「私たちの」) では、子供たちと家族の安全とプライバシーを最優先しています。このプライバシーポリシーでは、お客様の情報をどのように収集、使用、保護するかを説明します。",
+        hCollection: "1. 情報の収集",
+        pCollection: "DinoBrowser Premiumは、ペアレンタルコントロールに重点を置いたローカルWebブラウザです。<strong>個人データを収集して第三者に販売することはありません。</strong> すべてのペアレンタルコントロール設定、Webサイトのブロック、および設定は暗号化され、デバイスのローカルに保存されます。",
+        ulCollection: `<li><strong>ローカルデータ:</strong> 使用履歴、セキュリティPIN、およびホワイト/ブラックリストは、軍用グレードの暗号化 (SQLCipherおよびDPAPI) を使用してコンピューターにのみ保存されます。</li>
+                       <li><strong>ネットワークリクエスト:</strong> ブラウザはCloudflare DNS for Familiesを使用して、標準のDNS解決ポリシーに従って成人向けコンテンツやマルウェアをフィルタリングします。</li>`,
+        hFeatures: "2. 子供向けの機能",
+        pFeatures: "当社のソフトウェアには、完全にオフラインのミニゲームや教育機能 (Dino Adventure) が含まれています。広告トラッカー、隠しアプリ内購入、侵襲的なテレメトリは含まれていません。児童のプライバシー法 (COPPAなど) を厳密に遵守しています。",
+        hPurchases: "3. 購入とサブスクリプション",
+        pPurchases: "DinoBrowser Premiumは、<strong>Microsoft Store</strong>の安全なインフラストラクチャを通じて購入とサブスクリプションを管理します。サーバー上でクレジットカードや支払い情報を保存または処理することはありません。",
+        hPermissions: "4. システム権限",
+        pPermissions: "安全なブラウジング環境を提供し、不適切なサイトへのアクセスをブロックするために、DinoBrowserには昇格されたシステム権限 (キオスクモードおよびローカルのHostsファイル操作) が必要になる場合があります。これらの権限は、コンテンツのフィルタリングとセキュリティにのみ使用されます。",
+        hContact: "5. 連絡先",
+        pContact: "当社のプライバシー慣行についてご質問がある場合は、Microsoft Storeポータルまたはアプリ内の保護者用ダッシュボードからテクニカルサポートチームにお問い合わせください。",
+        btnContact: "サポートに連絡",
+        footer: "&copy; 2026 Husky Estudio Soft. 全著作権所有。"
+      },
+      'zh-CN': {
+        pageTitle: "隐私政策 - DinoBrowser Premium",
+        title: "隐私政策",
+        lastUpdated: "最后更新：<strong>2026年6月11日</strong>",
+        intro: "在 <strong>DinoBrowser Premium</strong> （“我们”、“我们的”），儿童和家庭的安全与隐私是我们的首要任务。本隐私政策说明了我们如何收集、使用和保护您的信息。",
+        hCollection: "1. 信息收集",
+        pCollection: "DinoBrowser Premium 是一款专注于家长控制的本地 Web 浏览器。<strong>我们不会收集或向第三方出售个人数据。</strong> 所有家长控制设置、网站屏蔽和首选项均已加密并本地存储在您的设备上。",
+        ulCollection: `<li><strong>本地数据：</strong> 使用历史记录、安全 PIN 码以及白名单/黑名单仅使用军用级加密（SQLCipher 和 DPAPI）存储在您的计算机上。</li>
+                       <li><strong>网络请求：</strong> 浏览器使用 Cloudflare DNS for Families，根据其标准 DNS 解析策略过滤成人内容和恶意软件。</li>`,
+        hFeatures: "2. 儿童功能",
+        pFeatures: "我们的软件包含完全离线的迷你游戏和教育功能（Dino Adventure）。它们不包括广告跟踪器、隐藏的应用程序内购买或侵入式遥测。我们严格遵守儿童隐私法（如 COPPA）。",
+        hPurchases: "3. 购买和订阅",
+        pPurchases: "DinoBrowser Premium 通过 <strong>Microsoft Store</strong> 的安全基础架构管理购买和订阅。我们不会在我们的服务器上存储或处理信用卡或付款信息。",
+        hPermissions: "4. 系统权限",
+        pPermissions: "为了提供安全的浏览环境并阻止访问不当网站，DinoBrowser 可能需要提升的系统权限（自助服务终端模式和本地 Hosts 文件操作）。这些权限仅用于内容过滤和安全。",
+        hContact: "5. 联系",
+        pContact: "如果您对我们的隐私惯例有任何疑问，请通过 Microsoft Store 门户或应用内的家长控制面板联系我们的技术支持团队。",
+        btnContact: "联系支持",
+        footer: "&copy; 2026 Husky Estudio Soft. 保留所有权利。"
+      }
+    };
+
+    function setLanguage(lang) {
+      if (!translations[lang]) lang = 'en'; // fallback to english
+      
+      document.documentElement.lang = lang;
+      const t = translations[lang];
+      
+      document.getElementById('page-title').textContent = t.pageTitle;
+      document.getElementById('title').textContent = t.title;
+      document.getElementById('last-updated').innerHTML = t.lastUpdated;
+      document.getElementById('intro').innerHTML = t.intro;
+      
+      document.getElementById('h-collection').textContent = t.hCollection;
+      document.getElementById('p-collection').innerHTML = t.pCollection;
+      document.getElementById('ul-collection').innerHTML = t.ulCollection;
+      
+      document.getElementById('h-features').textContent = t.hFeatures;
+      document.getElementById('p-features').innerHTML = t.pFeatures;
+      
+      document.getElementById('h-purchases').textContent = t.hPurchases;
+      document.getElementById('p-purchases').innerHTML = t.pPurchases;
+      
+      document.getElementById('h-permissions').textContent = t.hPermissions;
+      document.getElementById('p-permissions').innerHTML = t.pPermissions;
+      
+      document.getElementById('h-contact').textContent = t.hContact;
+      document.getElementById('p-contact').innerHTML = t.pContact;
+      
+      document.getElementById('btn-contact').textContent = t.btnContact;
+      document.getElementById('footer').innerHTML = t.footer;
+
+      // Update active button visual
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.style.background = '#FFE66D';
+      });
+      // Highlight the button that was clicked or matching current language
+      if (event && event.target && event.target.tagName === 'BUTTON') {
+        event.target.style.background = '#FDCB6E';
+      } else {
+        // highlight based on loaded lang
+        const buttons = document.querySelectorAll('.lang-btn');
+        const langMap = ['en', 'es', 'pt-BR', 'fr', 'de', 'it', 'nl', 'ja', 'zh-CN'];
+        const index = langMap.indexOf(lang);
+        if (index !== -1) buttons[index].style.background = '#FDCB6E';
+      }
+    }
+
+    // Initialize logic
+    window.addEventListener('DOMContentLoaded', () => {
+      // 1. Check URL param ?lang=xx
+      const urlParams = new URLSearchParams(window.location.search);
+      let lang = urlParams.get('lang');
+      
+      // 2. Check localStorage from DinoBrowser settings
+      if (!lang) {
+        lang = localStorage.getItem('dino-locale');
+      }
+
+      // 3. Fallback to browser navigator language
+      if (!lang) {
+        lang = navigator.language || navigator.userLanguage;
+        if (lang) {
+          lang = lang.split('-')[0].toLowerCase();
+          if (lang === 'pt') lang = 'pt-BR';
+          if (lang === 'zh') lang = 'zh-CN';
+        }
+      }
+
+      // Default to English if language is not supported
+      if (!translations[lang]) {
+        lang = 'en';
+      }
+
+      setLanguage(lang);
+    });
+  </script>
+</body>
+</html>
