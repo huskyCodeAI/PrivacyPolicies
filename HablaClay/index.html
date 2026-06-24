@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | HablaClay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #0b1329;
+      --card-bg: rgba(30, 41, 59, 0.45);
+      --card-border: rgba(249, 115, 22, 0.15);
+      --primary: #f97316;
+      --text-main: #f8fafc;
+      --text-sub: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 40px 20px;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 48px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .header {
+      margin-bottom: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 24px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .logo-dot {
+      width: 12px;
+      height: 12px;
+      background-color: var(--primary);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--primary);
+    }
+
+    .brand-name {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--primary);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .date {
+      font-size: 0.9rem;
+      color: var(--text-sub);
+    }
+
+    section {
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    p {
+      color: var(--text-sub);
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 16px;
+      color: var(--text-sub);
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .contact-info {
+      background: rgba(255, 255, 255, 0.03);
+      padding: 16px;
+      border-radius: 8px;
+      border-left: 4px solid var(--primary);
+      margin-top: 16px;
+    }
+
+    .contact-info p {
+      margin-bottom: 0;
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .contact-info span {
+      color: var(--text-sub);
+      font-weight: 400;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 20px 10px;
+      }
+      .container {
+        padding: 24px;
+      }
+      h1 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo-container">
+        <div class="logo-dot"></div>
+        <div class="brand-name">HablaClay</div>
+      </div>
+      <h1>Privacy Policy</h1>
+      <div class="date">Last updated: June 22, 2026</div>
+    </header>
+
+    <main>
+      <section>
+        <p>Husky Estudio Soft ("we", "our", or "us") operates the HablaClay application. We respect your privacy and are committed to protecting it. This privacy policy explains our practices regarding data collection and usage within the application.</p>
+      </section>
+
+      <section>
+        <h2>1. Information Collection and Use</h2>
+        <p>HablaClay does not directly collect, store, share, or monetize any personal data, voice recordings, or biometric information. No account sign-up, email registration, or social profile integration is required to use this application.</p>
+      </section>
+
+      <section>
+        <h2>2. Voice Input Processing (Microphone)</h2>
+        <p>To enable the Spanish pronunciation evaluation feature, HablaClay requests system permission to access your microphone. Please note the following regarding your audio data:</p>
+        <ul>
+          <li>The voice-to-text conversion is processed through the host operating system's native speech recognition interfaces (via the Chromium Web Speech API in WebView2).</li>
+          <li>Husky Estudio Soft does not transmit, receive, or store your voice recording data on any servers owned or managed by us.</li>
+          <li>All speech recognition operations are subject to the native privacy terms of the host platform provider (Microsoft/Windows).</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. Local Progress Storage</h2>
+        <p>All application progress, lesson scores, study statistics, and completed achievements are saved strictly locally on your physical device. We do not host cloud databases or run online trackers to capture your progress or learning behavior.</p>
+      </section>
+
+      <section>
+        <h2>4. Updates to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+      </section>
+
+      <section>
+        <h2>5. Contact Us</h2>
+        <p>If you have any questions or feedback regarding this Privacy Policy, please contact us:</p>
+        <div class="contact-info">
+          <p>Husky Estudio Soft</p>
+          <p><span>Support Email:</span> support@huskyestudiosoft.local</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
